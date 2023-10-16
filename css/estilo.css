@@ -1,0 +1,399 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffe4;
+}
+
+
+header {
+    background-color: hsl(108, 80%, 72%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 10px rgb(60, 114, 6);
+    position: sticky;
+    z-index: 4;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    transition: 0.3s;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.barnav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.barnav a {
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.barnav1 {
+    display: flex;
+}
+
+.barnav1 a:hover {
+    border-radius: 5px;
+    background-color: #e5fccb;
+    transform: scale(1.1);
+}
+.boton{
+    display: flex;
+}
+
+.botonbarnav{
+    margin-top: 15px;
+    margin-bottom:15px;
+    margin-right: 15px;
+}
+
+.boton-menu {
+    background-color: #96f180;
+    color: black;
+    border: solid;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.emergencia{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.general{
+    display: flex;
+    background-color: #282e34;
+    color: white;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.general .div1{
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 15px;
+
+}
+
+.general .div1 ul{
+    list-style: none;
+}
+
+.div2 {
+    box-sizing: border-box;
+    padding: 2%;
+    padding-left: 20%;
+}
+
+.mapa{
+    padding: 2%;
+    padding-left: 25em;
+}
+.sociales{
+    display: flex
+}
+
+.sociales img{
+    height: 50px;
+}
+
+.sociales a{
+    padding: 5%;
+    margin-top: 10%;
+    margin-bottom: -10%;
+}
+
+.derechos{
+    background-color: #292c2c;
+    color: white;
+    align-items: center;
+}
+.derechos p{
+    padding: 1.5%;
+    display: flex;
+    justify-content: center;
+}
+
+#carru{
+    list-style: none;
+    height: 27rem;
+    overflow: hidden;
+}
+
+
+#carru li a i {
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
+}
+
+#carru .carrusel img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.carrusel{
+    height: 100%;
+    width: 52%;
+    margin: auto;
+    position: relative;
+}
+
+.imagencarrusel{
+    height: 100%;
+    width: 100%;
+
+}
+
+.botoncarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+.carruseltexto {
+    position: relative;
+    display: flex;
+
+}
+
+.carruseltexto h2{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 4.7rem;
+    align-items: center;
+    color: #ffffe4;
+    text-shadow: 2px 2px 10px black;
+    background-color: rgba(113, 236, 144, 0.5);
+}
+
+
+#jefemedico {
+    border: 1px solid black;
+    border-left: 3px solid #96f180;
+    background-color:#e5fccb;
+    width: 25%;
+    margin: 2rem;
+    box-shadow: 0.5px 0.5px 10px ;
+}
+
+#jefemedico h2{
+    padding: 1rem;
+}
+
+#jefemedico h3{
+    padding: 1rem;
+}
+
+#jefemedico a p {
+    padding: 1rem;
+}
+
+#secretariamed{
+    border: 1px solid black;
+    border-left: 3px solid #96f180;
+    background-color:#e5fccb;
+    width: 25%;
+    margin: 2rem;
+    box-shadow: 0.5px 0.5px 10px;
+}
+
+
+#secretariamed h2{
+    padding: 1rem;
+}
+
+#secretariamed p {
+    padding: 1rem;
+}
+
+
+#turnos{
+    display: flex;
+    border: 1px solid black;
+    background-color:#e5fccb;
+    width: 45%;
+    margin: 2rem;
+    box-shadow: 0.5px 0.5px 10px;
+    padding: 3rem;
+}
+
+#instru {
+    padding: 5px ;
+}
+
+#sugerencia{
+    background-color: #96f180;
+}
+
+#sugerencia p {
+    padding: 1rem;
+    font-size: 20px
+}
+
+#compromiso{
+    background-color:#b2ceab ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem
+}
+
+#personal{
+    display: flex;
+    border: 1px solid black;
+    background-color:#e5fccb;
+    width: 45%;
+    margin: 2rem;
+    box-shadow: 0.5px 0.5px 10px;
+    padding: 3rem;
+}
+
+#cards{
+    display: flex;
+    width:100%;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms   ease;
+    background-color:#c7dbc2 ;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+}
+
+.card .contenido{
+    text-align: center;
+    padding: 5%;
+}
+
+.card .contenido p {
+    line-height: 1.4;
+    color: #6a6a6a;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 7%;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 3%;
+    margin-top: 5%;
+    color: black;
+    border: 1px solid black;
+    border-radius: 7%;
+    transition: all 400ms   ease;
+}
+
+
+.card .contenido a:hover{
+    background-color: #96f180;
+}
+
+
+@media (max-width: 400px) {
+    header {
+        flex-direction: column;
+    }
+
+    .barnav{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .barnav1 a {
+        font-size: 0.7rem;
+    }
+    .botonbarnav .emergencia , .boton-menu{
+        font-size: 0.7rem;
+    }
+    
+    .botonbarnav{
+        margin-right: 0px;
+    }
+
+    .footer .general{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sociales a{
+        padding: 16%;
+        margin-left: -25%;
+        margin-top: 0.5%;
+    }
+    
+    .mapa{
+        display: none;
+    }
+}

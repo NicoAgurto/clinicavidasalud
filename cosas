@@ -1,0 +1,67 @@
+Todavia no te hiciste tu control anual?
+Mejora tu calidad de vida 
+Nuestra historia  
+Nuestros servicios
+
+
+carrusel
+
+main section{
+    display: grid;
+    grid-template-areas: "carrusel carrusel carrusel carrusel"
+                        "turnos turnos turnos infoclinica"
+                        "compromiso compromismo compromiso compromiso"
+                        "cards cards cards cards"
+                        "novedades novedadades novedades novedades";
+    grid-template-rows: 25% 15% 10% 25% 25%;
+}
+
+
+
+
+#carru{
+    grid-area: carrusel;
+}
+
+#infoclinica{
+    grid-area: infoclinica;
+}
+
+#turnos{
+    grid-area: turnos;
+}
+
+#compromiso{
+    grid-area: compromiso;
+}
+
+#cards{
+    grid-area: cards;
+}
+
+#novedades{
+    grid-area: novedades;
+}
+
+
+    object-fit: cover;
+    object-position: top;
+
+
+    
+@keyframes slide {
+    0% {margin-left: 0; }
+    20%{ margin-left: 0; }
+
+    25% {margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% {margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% {margin-left: -300%; }
+    100%{ margin-left: -300%; }
+
+
+
+}

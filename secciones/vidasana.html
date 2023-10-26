@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="/css/estilos1.css">
+    <script src="https://kit.fontawesome.com/e25594a6ef.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <header id="pepe" class="header">
+        <div class="logo">
+            <a href="./Index.html"><img src="/Imagenes/cruz-medica-vector-diseno-logotipo-hospital_53876-136743-removebg-preview.png" alt="" class="imglogo"></a>
+            <a href="./Index.html"><h1 class="Titulo">Clinica salud y vida Activa</h1></a>
+        </div>
+    <nav class="barnav">
+        <div class="botonbarnav">
+            <a href=""><button class="boton-menu">Acceso a Personal</button></a>
+            <a href=""><button class="boton-menu">Acceso a Pacientes</button></a>
+            <button class="emergencia">Emergencias</button>
+        </div>
+        <div class="barnav1">
+            <a href="http://">Home</a>
+            <a href="http://">Servicios</a>
+            <a href="http://">Vida Sana</a>
+            <a href="http://">Acerca de nosotros</a>
+        </div>
+    </nav>
+</header>
     <section class="new cards">
     <div class="new-card">
         <img src="/Imagenes/img1/fondo1.jpg" alt="" class="resposive-img" />
@@ -16,7 +37,7 @@
 
     
 
-  <main>
+  
         <div class="container">
          <div class="card">
             <figure>
@@ -62,10 +83,62 @@
          </div>
         
         </div>
-
+       
+         <div id="app">
+          <div v-for="elemento in datos">
+             <p >Nombre:{{elemento.name.first}}</p>
+             <p >Apellido:{{elemento.name.last}}</p>
+             <p >Email:{{elemento.email}}</p>
+             <img :src="elemento.picture.large" :alt="elemento.name.last">
+             <hr>
+           </div>
          
-        
+         
+        </div>
 
-    </main>
+        <footer class="footer">
+        <div class="general">
+            <div class="div1">
+                <h3>Sede Central</h3>
+            <br>
+            <li >
+                Calle xx Nºxxx e/ x Y x
+                <br>
+                La Plata(1900)
+                <br>
+            </li>
+            <br>
+            <ul>
+                <li>Tel: (0221) xxx-xxxx</li>
+                <li>Contacto </li>
+                <li>Horario 24hs</li>
+            </div>
+            <div    class="div2">
+                <h3>Instituciones del Grupo</h3>
+                <br>
+                <li>Instituto medico Platense</li>
+                <br>
+                <li>Nueva clinica del Niño</li>
+                <br>
+                <li>Centro medico diagnostico CB</li>
+                <br>
+                <li>Instituto medico Platense Beriso</li>
+                <div class="sociales">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="/Imagenes/Iconos redes sociales/facebook.png" alt=""></a>
+                    <a href="https://twitter.com/home" target="_blank" ><img src="/Imagenes/Iconos redes sociales/gorjeo.png" alt=""></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="/Imagenes/Iconos redes sociales/whatsapp.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank" ><img src="/Imagenes/Iconos redes sociales/instagram.png" alt=""></a>
+                </div>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.195082297036!2d-57.94442092323122!3d-34.92664407462604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e89fd4d4d3e3%3A0x2b724c9451e723c7!2zQ2zDrW5pY2EgZGVsIE5pw7Fv!5e0!3m2!1ses-419!2sar!4v1696306378635!5m2!1ses-419!2sar" width="150" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="derechos">
+            <p>© Copyright ©2023 Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>       
+    <script src="/js/main.js"></script>
 </body>
 </html>
